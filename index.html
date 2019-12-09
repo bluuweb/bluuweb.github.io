@@ -195,6 +195,7 @@
               .get(
                 "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/javascript"
               )
+              .where("visibility", "==", "public")
               .then(res => {
                 console.log(res.data.documents);
                 this.javascript = res.data.documents;
@@ -207,6 +208,7 @@
               .get(
                 "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/backend"
               )
+              .where("visibility", "==", "public")
               .then(res => {
                 console.log(res.data.documents);
                 this.backend = res.data.documents;
@@ -219,6 +221,7 @@
               .get(
                 "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/productividad"
               )
+              .where("visibility", "==", "public")
               .then(res => {
                 console.log(res.data.documents);
                 this.productividad = res.data.documents;
@@ -231,6 +234,7 @@
               .get(
                 "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/vue"
               )
+              .where("visibility", "==", "public")
               .then(res => {
                 console.log(res.data.documents);
                 this.vue = res.data.documents;
