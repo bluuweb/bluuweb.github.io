@@ -17,6 +17,27 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
     />
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCrwh8JlngLw8r3XQGYnnoakN-e3gh_GCk",
+        authDomain: "sitio-github.firebaseapp.com",
+        databaseURL: "https://sitio-github.firebaseio.com",
+        projectId: "sitio-github",
+        storageBucket: "sitio-github.appspot.com",
+        messagingSenderId: "1005225104246",
+        appId: "1:1005225104246:web:3d68c3c154fd266d4aa057"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      var db = firebase.firestore();
+    </script>
     <title>Cursos bluuweb</title>
   </head>
   <body>
@@ -44,21 +65,21 @@
               >
                 <v-card class="text-center text-uppercase">
                   <v-card-title class="justify-center"
-                    >{{item.fields.nombre.stringValue}}</v-card-title
+                    >{{item.nombre}}</v-card-title
                   >
                   <v-card-actions class="justify-center">
                     <v-btn
                       color="warning"
                       elevation="0"
-                      :href="item.fields.enlace.stringValue"
+                      :href="item.enlace"
                       target="_blank"
                       >Youtube</v-btn
                     >
                     <v-btn
-                      v-if="item.fields.guia"
+                      v-if="item.guia"
                       color="warning"
                       elevation="0"
-                      :href="item.fields.guia.stringValue"
+                      :href="item.guia"
                       target="_blank"
                       >Guía</v-btn
                     >
@@ -79,21 +100,21 @@
               >
                 <v-card class="text-center text-uppercase">
                   <v-card-title class="justify-center"
-                    >{{item.fields.nombre.stringValue}}</v-card-title
+                    >{{item.nombre}}</v-card-title
                   >
                   <v-card-actions class="justify-center">
                     <v-btn
                       color="success"
                       elevation="0"
-                      :href="item.fields.enlace.stringValue"
+                      :href="item.enlace"
                       target="_blank"
                       >Youtube</v-btn
                     >
                     <v-btn
-                      v-if="item.fields.guia"
+                      v-if="item.guia"
                       color="success"
                       elevation="0"
-                      :href="item.fields.guia.stringValue"
+                      :href="item.guia"
                       target="_blank"
                       >Guía</v-btn
                     >
@@ -114,21 +135,21 @@
               >
                 <v-card class="text-center text-uppercase">
                   <v-card-title class="justify-center"
-                    >{{item.fields.nombre.stringValue}}</v-card-title
+                    >{{item.nombre}}</v-card-title
                   >
                   <v-card-actions class="justify-center">
                     <v-btn
                       color="error"
                       elevation="0"
-                      :href="item.fields.enlace.stringValue"
+                      :href="item.enlace"
                       target="_blank"
                       >Youtube</v-btn
                     >
                     <v-btn
-                      v-if="item.fields.guia"
+                      v-if="item.guia"
                       color="error"
                       elevation="0"
-                      :href="item.fields.guia.stringValue"
+                      :href="item.guia"
                       target="_blank"
                       >Guía</v-btn
                     >
@@ -149,21 +170,21 @@
               >
                 <v-card class="text-center text-uppercase">
                   <v-card-title class="justify-center"
-                    >{{item.fields.nombre.stringValue}}</v-card-title
+                    >{{item.nombre}}</v-card-title
                   >
                   <v-card-actions class="justify-center">
                     <v-btn
                       color="primary"
                       elevation="0"
-                      :href="item.fields.enlace.stringValue"
+                      :href="item.enlace"
                       target="_blank"
                       >Youtube</v-btn
                     >
                     <v-btn
-                      v-if="item.fields.guia"
+                      v-if="item.guia"
                       color="primary"
                       elevation="0"
-                      :href="item.fields.guia.stringValue"
+                      :href="item.guia"
                       target="_blank"
                       >Guía</v-btn
                     >
@@ -185,63 +206,52 @@
         vuetify: new Vuetify(),
         data: {
           javascript: [],
+          vue: [],
           backend: [],
-          productividad: [],
-          vue: []
+          productividad: []
         },
         methods: {
           leerDatos() {
-            axios
-              .get(
-                "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/javascript"
-              )
+            db.collection("javascript")
               .where("visibility", "==", "public")
-              .then(res => {
-                console.log(res.data.documents);
-                this.javascript = res.data.documents;
-              })
-              .catch(e => {
-                console.log(e.response);
+              .get()
+              .then(querySnapshot => {
+                const datos = [];
+                querySnapshot.forEach(doc => {
+                  this.javascript.push(doc.data());
+                });
               });
 
-            axios
-              .get(
-                "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/backend"
-              )
+            db.collection("vue")
               .where("visibility", "==", "public")
-              .then(res => {
-                console.log(res.data.documents);
-                this.backend = res.data.documents;
-              })
-              .catch(e => {
-                console.log(e.response);
+              .get()
+              .then(querySnapshot => {
+                const datos = [];
+                querySnapshot.forEach(doc => {
+                  this.vue.push(doc.data());
+                });
               });
 
-            axios
-              .get(
-                "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/productividad"
-              )
+            db.collection("backend")
               .where("visibility", "==", "public")
-              .then(res => {
-                console.log(res.data.documents);
-                this.productividad = res.data.documents;
-              })
-              .catch(e => {
-                console.log(e.response);
+              .get()
+              .then(querySnapshot => {
+                const datos = [];
+                querySnapshot.forEach(doc => {
+                  this.backend.push(doc.data());
+                });
               });
 
-            axios
-              .get(
-                "https://firestore.googleapis.com/v1/projects/sitio-github/databases/(default)/documents/vue"
-              )
+            db.collection("productividad")
               .where("visibility", "==", "public")
-              .then(res => {
-                console.log(res.data.documents);
-                this.vue = res.data.documents;
-              })
-              .catch(e => {
-                console.log(e.response);
+              .get()
+              .then(querySnapshot => {
+                const datos = [];
+                querySnapshot.forEach(doc => {
+                  this.productividad.push(doc.data());
+                });
               });
+              
           }
         },
         created() {
