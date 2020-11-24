@@ -2,10 +2,10 @@
 home: true
 description: 'bluuweb es un canal de youtube dedicado a la entrega de tutoriales y cursos sobre el desarrollo web.'
 lang: en-ES
-heroImage: /cursos.png
+# heroImage: /cursos.png
 tagline: Bienvenidos a un nuevo video tutorial... 😍
-actionText: Ir a youtube.com/bluuweb →
-actionLink: https://youtube.com/bluuweb
+actionText: Cursos en Youtube
+actionLink: https://bit.ly/3kLYAqr
 features:
 - title: Paso a paso
   details: Tutoriales desde cero y sin conocimientos previos
@@ -132,7 +132,7 @@ Una forma fácil de acceder a los contenidos de <b>bluuweb!</b> 👇🏼👇🏼
 ## ¿Quieres apoyar a bluuweb? 😍
 
 Tienes varias jugosas alternativas:
-1. Suscríbete al canal de Youtube (es gratis) [click aquí](https://bit.ly/3kLYAqr)
+1. [Suscríbete al canal de Youtube (es gratis) click aquí](https://bit.ly/3kLYAqr)
 2. Si estás viendo un video no olvides regalar un 👍 like y comentario 🙏🏼
 2. También puedes ser miembro del canal de [Youtube (click aquí)](https://www.youtube.com/channel/UCH7IANkyEcsVW_y1IlpkamQ/join)
 3. Dona un cafecito ☕ para bluuweb: [https://www.paypal.me/bluuweb](https://www.paypal.me/bluuweb)
