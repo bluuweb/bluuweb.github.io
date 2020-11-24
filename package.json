@@ -1,0 +1,19 @@
+{
+  "name": "principal-web",
+  "version": "0.0.1",
+  "description": "pagina web bluuweb",
+  "main": "index.js",
+  "authors": {
+    "name": "bluuweb",
+    "email": "contacto@bluuweb.cl"
+  },
+  "repository": "/principal-web",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
