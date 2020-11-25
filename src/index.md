@@ -2,7 +2,7 @@
 home: true
 description: 'bluuweb es un canal de youtube dedicado a la entrega de tutoriales y cursos sobre el desarrollo web.'
 lang: en-ES
-# heroImage: /cursos.png
+heroImage: /logo-corazon.jpg
 tagline: Bienvenidos a un nuevo video tutorial... 😍
 actionText: Cursos en Youtube
 actionLink: https://bit.ly/3kLYAqr
