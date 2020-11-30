@@ -2,7 +2,7 @@
 home: true
 description: 'bluuweb es un canal de youtube dedicado a la entrega de tutoriales y cursos sobre el desarrollo web.'
 lang: en-ES
-heroImage: /logo-corazon.jpg
+heroImage: /jim.gif
 tagline: Bienvenidos a un nuevo video tutorial... 😍
 actionText: Cursos en Youtube
 actionLink: https://bit.ly/3kLYAqr
@@ -138,20 +138,9 @@ Tienes varias jugosas alternativas:
 3. Dona un cafecito ☕ para bluuweb: [https://www.paypal.me/bluuweb](https://www.paypal.me/bluuweb)
 3. Puedes adquirir cursos premium en Udemy 👇🏼👇🏼👇🏼
 
-::: tip CURSO VUE EN OFERTA!
-Aprende desde cero a trabajar con <b>Vue.js y Firebase</b> aquí: [http://curso-vue-js-udemy.bluuweb.cl](http://curso-vue-js-udemy.bluuweb.cl)
-<b>Nos vemos en clases!</b>
-:::
-
-::: tip CURSO REACT EN OFERTA!
-Aprende desde cero a trabajar con <b>React.js y Firebase</b> aquí: [http://curso-react-js-udemy.bluuweb.cl](http://curso-react-js-udemy.bluuweb.cl)
-<b>Nos vemos en clases!</b>
-:::
-
-::: tip CURSO BOOTSTRAP EN OFERTA!
-Aprende desde cero a trabajar con <b>Bootstrap 4!</b> aquí: [http://curso-bootstrap-4-udemy.bluuweb.cl](http://curso-bootstrap-4-udemy.bluuweb.cl)
-<b>Nos vemos en clases!</b>
-:::
+[<img :src="$withBase('/vue-js.jpg')">](http://curso-vue-js-udemy.bluuweb.cl)
+[<img :src="$withBase('/react-js.jpg')">](http://curso-react-js-udemy.bluuweb.cl)
+[<img :src="$withBase('/bootstrap.jpg')">](http://curso-bootstrap-4-udemy.bluuweb.cl)
 
 ## Próximamente
 Estoy cocinando nuevos videos tutoriales y cursos 😜
