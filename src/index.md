@@ -29,6 +29,32 @@ Una forma fácil de acceder a los contenidos de <b>bluuweb!</b> 👇🏼👇🏼
 - [Menú HTML, CSS y JS - Navbar Responsive](https://www.youtube.com/watch?v=GVjgi3Fg4Xg&list=PLPl81lqbj-4K8_EFHULcpQMjBLHcp8J01)
 - [Convertir PSD a HTML](https://www.youtube.com/watch?v=lvKU_BPcAU0&list=PLPl81lqbj-4Lnt3_n-IUWjF4EtLofhLRw)
 
+## Desafíos [FrontEnd]
+Cuando realizamos proyectos es cuando más aprendemos, te invito a explorar una serie de desafíos utilizando HTML, CSS y JavaScript. ¡Vamos a escribir código! 🎉 Puedes explorar e intentar desafíos aquí: [https://www.frontendmentor.io/challenges](https://www.frontendmentor.io/challenges)
+
+### Nivel "Novato"
+- [Card HTML y CSS](https://youtu.be/Xe_qNR1mmCg)
+  - [guía](https://bluuweb.github.io/practicas/03-card/)
+
+### Nivel "Junior"
+- [Dark Mode - Tema Oscuro con CSS y JS](https://youtu.be/3V8E57ChrKM)
+  - [guía](https://bluuweb.github.io/practicas/02-dark-mode/)
+
+### Nivel "Intermedio"
+- [ToDo List - HTML, JS y LocalStorage](https://youtu.be/DEbNCqe2e2U)
+  - [guía](https://bluuweb.github.io/javascript/02a-todo/)
+- [Carrito de compras (addEventListener + Fragment + Template + LocalStorage)](https://youtu.be/JL7Wo-ASah4)
+  - [guía](https://bluuweb.github.io/javascript/02-dom/#practica-template)  
+
+### Nivel "Avanzado"
+- [REST Countries API](https://www.youtube.com/watch?v=TLKQacsLroo)
+  - [guía](https://bluuweb.github.io/practicas/01-api-paises)
+- [ToDo con Vue.js + Composition API](https://youtu.be/76epsLAAOdQ)
+  - [guía](https://bluuweb.github.io/javascript/02b-todo-vue/)
+
+### Nivel "Gurú"
+- Próximamente...
+
 ## Framework y Herramientas CSS
 - [Bootstrap 4 - Fundamentos](https://www.youtube.com/watch?v=z7ecV0tL1Gg)
 - [Tailwind CSS - Curso desde cero](https://www.youtube.com/watch?v=3xlUAMXui2c&list=PLPl81lqbj-4JdoHDiERR2ptkw9zRggXAL)
@@ -44,15 +70,6 @@ Una forma fácil de acceder a los contenidos de <b>bluuweb!</b> 👇🏼👇🏼
 - [JavaScript Moderno - DOM](https://www.youtube.com/watch?v=11MEBKljhFc&list=PLPl81lqbj-4I2ZOzryjPKxfhK3BzTlaJ7&index=2)
   - [guía](https://bluuweb.github.io/javascript/02-dom/)
 
-## Prácticas JS
-- [Carrito de compras (addEventListener + Fragment + Template + LocalStorage)](https://youtu.be/JL7Wo-ASah4)
-  - [guía](https://bluuweb.github.io/javascript/02-dom/#practica-template)
-- [Dark Mode - Tema Oscuro con CSS y JS](https://youtu.be/3V8E57ChrKM)
-  - [guía](https://bluuweb.github.io/practicas/02-dark-mode/)
-- [ToDo List - Lista de tareas con LocalStorage](https://youtu.be/DEbNCqe2e2U)
-  - [guía](https://bluuweb.github.io/javascript/02a-todo/)
-- [REST Countries API](https://www.youtube.com/watch?v=TLKQacsLroo)
-  - [guía](https://bluuweb.github.io/practicas/01-api-paises)
 
 ## JavaScript Conceptos
 - [AJAX](https://www.youtube.com/watch?v=1kA4DowJs08&list=PLPl81lqbj-4L6JypMCzyMqZ0v87dltjqD)
